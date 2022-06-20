@@ -1,0 +1,24 @@
+body{
+    color: black;
+    background: #DBF1FD;
+}
+span{
+    font-size: 30px;
+}
+#camera , #result{
+    border: 2px dashed darkcyan;
+}
+#zen, #zen2{
+    color: black;
+}
+.zn{
+    font-size: 40px
+}
+.hand{
+    font-size: 45px;
+}
+.heading{
+    font-size: 18px;
+    border-radius: 10px;
+    letter-spacing: 10px;
+}

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+<div class="container">
+    <h2 class="btn btn-info heading">HAND GESTURE IDENTIFIER
+
+    <br>
+    <span>👌</span>
+    <span>✌️</span>
+    <span>👍</span>
+    <span>👊</span>
+    <span>🤙</span>
+    <span>🤌</span>
+   </h2>
+
+   <br><br>
+
+   <p style="font-size: 22px;">Take a picture of a gesture to find out about it's ShivSoCalled® meaning</p>
+   <br>
+   <p>The following hand gestures are plausible in this website</p>
+   <span>👌|✌️|👍</span>
+
+   <div class="col-md-4 col-sm-12 col-xs-12">
+       <label>Webcam View - </label>
+       <div id="camera"></div>
+       <br><br>
+       <button onclick="pic();" class="btn btn-warning">Capture Image</button>
+   </div>
+
+   <div class="col-md-4 col-sm-12 col-xs-12">
+       <label>Answer 1 (more likely) - </label>
+       <p class="zn" id="zen"></p>
+       <p class="hand" id="uhand"></p>
+   </div>
+
+   <div class="col-md-4 col-sm-12 col-xs-12">
+    <label>Answer 2 (less likely) - </label>
+    <p class="zn" id="zen2"></p>
+    <p class="hand" id="uhand2"></p>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <label>Snapshot - </label>
+    <div id="result"></div>
+    <br><br>
+    <button onclick="confirm();" class="btn btn-success">Predict Gesture</button>
+</div>
+</center>
+
+
+</div>
+    </body>
+</html>
